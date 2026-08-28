@@ -279,4 +279,17 @@ double _roundAngle(double a) { return _round1DP(a); }
 /* Round Magnitudes to 2 decimal places... resolution should be more than enough */
 double _roundMag(double a)   { return _round2DP(a); }
 
+/* A simple str to hex check. */
+int isHex(const char *hexStr) {
+int i;
+char c;
+    for (i = 0; i < strlen(hexStr); i++) {
+        c = hexStr[i];
+        if (!((c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f'))) {
+            return 0;
+        }
+    }
+    return 1; /* All characters are valid */
+}
+
 #endif

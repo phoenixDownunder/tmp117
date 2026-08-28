@@ -158,6 +158,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #endif
 
+#ifdef TDA9548A
+
+#endif
+
 #endif
 
 /* End of i2cIncludes.h */
